@@ -28,7 +28,7 @@ public class HumanoidBehavior : MonoBehaviour
         animator.SetFloat("HorizontalSpeed", movVector.x);
         animator.SetFloat("VerticalSpeed", movVector.y);
 
-        if(!isActive && ob)
+        if (!isActive && ob)
         {
             ob.SetInactive();
         }
@@ -37,8 +37,11 @@ public class HumanoidBehavior : MonoBehaviour
     public void SetInactive()
     {
         spr.enabled = false;
-        isActive = false;
-        OnDeath?.Invoke();
+        if (isActive)
+        {
+            isActive = false;
+            OnDeath?.Invoke();
+        }
     }
 
     public void ResetLevel()

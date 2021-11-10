@@ -67,10 +67,10 @@ public class Bomb : MonoBehaviour
                 {
                     hBehavior.SetInactive();
                 }
-                if(obj.TryGetComponent<Bomb>(out bomb) && !hBehavior)
+                if (obj.TryGetComponent<Bomb>(out bomb) && !hBehavior)
                 {
                     bomb.Explode();
-                    if(behavior)
+                    if (behavior)
                     {
                         behavior.SetInactive();
                     }
