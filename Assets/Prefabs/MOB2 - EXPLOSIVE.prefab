@@ -141,19 +141,7 @@ MonoBehaviour:
   MovementScript: {fileID: 8393882570644443536}
   OnDeath:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5982818193996096310}
-        m_TargetAssemblyTypeName: Bomb, Assembly-CSharp
-        m_MethodName: Explode
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &8393882570644443538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,5 +295,17 @@ MonoBehaviour:
       m_Calls: []
   OnDestruction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8393882570644443538}
+        m_TargetAssemblyTypeName: Dropper, Assembly-CSharp
+        m_MethodName: Drop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   objectState: 0
